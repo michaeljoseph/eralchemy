@@ -65,10 +65,7 @@ setup(
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=[
-        'SQLAlchemy',
-        'pygraphviz'
-    ],
+    install_requires=open('requirements.txt').readlines(),
     entry_points={
         'console_scripts': [
             'eralchemy=eralchemy.main:cli',
